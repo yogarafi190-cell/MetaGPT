@@ -1,8 +1,32 @@
-# Full Example: https://github.com/geekan/MetaGPT/blob/main/config/config2.example.yaml
-# Reflected Code: https://github.com/geekan/MetaGPT/blob/main/metagpt/config2.py
-# Config Docs: https://docs.deepwisdom.ai/main/en/guide/get_started/configuration.html
 llm:
-  api_type: "openai"  # or azure / ollama / groq etc.
-  model: "gpt-4-turbo"  # or gpt-3.5-turbo
-  base_url: "https://api.openai.com/v1"  # or forward url / other llm url
-  api_key: "YOUR_API_KEY"
+api_type: "google"
+model: "gemini-1.5-pro"
+api_key: "AQ.Ab8RN6ImronHeGD1I9btlCUUJ1jM-HnTv9xVHoGnqrWBjX3E9w"
+
+roles:
+• role: "ProductManager"
+llm:
+api_type: "google"
+model: "gemini-1.5-flash"
+api_key: "AIzaSyAF9Gr0ie-wMc_FFm9dB6vCOThstSM1sQo"
+
+• role: "Architect"
+llm:
+api_type: "groq"
+model: "llama3-70b-8192"
+api_key: "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"
+base_url: "https://groq.com"
+
+• role: "ProjectManager"
+llm:
+api_type: "google"
+model: "gemini-1.5-flash"
+api_key: "AQ.Ab8RN6KGr-ksK7PgP3Tb4X-iSBmn7_4xHaeIkowJ6-sbrRxVpA"
+
+• role: "Engineer"
+llm:
+api_type: "groq"
+model: "llama3-70b-8192"
+api_key: "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"
+base_url: "https://groq.com"
+
